@@ -1,0 +1,83 @@
+body {
+  margin: 5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-content: center;
+  background-image: url('./img/cream_dust.png');
+  color: rgb(0, 0, 0);
+  text-shadow: initial;
+  text-align: center;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(255, 255, 255);
+  color: rgb(54, 230, 0) ;
+  align-content: center;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+h4 {
+  white-space: 0;
+  width: 100%;
+  text-align: center;
+  background-image: url('./img/cream_dust.png');
+}
+
+table{
+  border: 0;
+  background-color: rgb(0, 1, 73);
+  width: 100%;
+}
+
+th{
+  background-color: rgb(33, 0, 122);
+  align-self: auto;
+  width: auto;
+  text-decoration-color: blueviolet;
+  color: whitesmoke
+}
+
+td{
+  background-color: rgb(1, 77, 190);
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-weight: bolder;
+}
+
+button{
+  color: rgb(0, 0, 0) !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #7eddffc2;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  background-image: url('./img/linkki.png');
+}
+
+
+
+#stops{
+  font-size: 25px;
+  padding: 1px;
+  white-space: 1px;
+  text-shadow: 1px 1px 1px midnightblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
