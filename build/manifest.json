@@ -1,6 +1,6 @@
 {
-  "short_name": "Linkkinäyttö",
-  "name": "Kotiraiteen linkkipysäkit",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

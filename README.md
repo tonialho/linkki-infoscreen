@@ -8,3 +8,10 @@ https://api.digitransit.fi/routing-data/v2/waltti/LINKKI.zip
 Database (in case of Linkki's data) needs to be merged from at least 4 different tables and merged to JSON to suit this apps use.
 
 Running app can be found from https://kotiraide-linkkinaytto.herokuapp.com/
+
+
+**TODO**
+- Autonomous updating of the timetable
+- Improved database creation process
+- External database (MongoDB)
+- Choose the buses' direction

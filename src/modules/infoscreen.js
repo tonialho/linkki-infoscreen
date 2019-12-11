@@ -131,8 +131,8 @@ const Infoscreen = () => {
     }
 
     const showing = showAll
-        ? "kaikki"
-        : "pysäkeittäin"
+        ? "pysäkeittäin"
+        : "kaikki"
     
     const showingTimeTable = showOnlyTimeTable
         ? ''
