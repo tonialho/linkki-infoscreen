@@ -22,6 +22,7 @@ const Infoscreen = () => {
     const [stopIndex, setStopIndex] = useState(0)
 
     const [showAll, setShowAll] = useState(true)
+    const [showOnlyTimeTable, setShowOnlyTimeTable] = useState(false)
 
     // Choose next stop from the array "stops"
     const handleStops = (i) => {
@@ -49,6 +50,7 @@ const Infoscreen = () => {
             return "L - talvi"
     }
 
+    // Handle the bus schedule to be presented
     const HandleNextLine = () => {
 
         if(timetable === null) {
@@ -124,16 +126,28 @@ const Infoscreen = () => {
         setShowAll(!showAll)
     }
 
+    const handleShowOnlyTimeTable = () => {
+        setShowOnlyTimeTable(!showOnlyTimeTable)
+    }
+
     const showing = showAll
         ? "kaikki"
         : "pysäkeittäin"
     
+    const showingTimeTable = showOnlyTimeTable
+        ? ''
+        :   <div>
+                <h1>Linkkinäyttö Kotiraide</h1>
+                <button id="stopsButton" onClick={() => handleShowAll()}>Näytä {showing}</button>
+                <br/> <br/>
+            </div>
 
     return (
         <div>
-            <button id="stopsButton" onClick={() => handleShowAll()}>Näytä {showing}</button>
-            <br/> <br/>
+            {showingTimeTable}
             <HandleNextLine />
+            <br/> <br/>
+            <button onClick={() => handleShowOnlyTimeTable()}>Vaihda näkymää</button>
         </div>
     )
 }

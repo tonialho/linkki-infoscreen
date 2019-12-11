@@ -6,7 +6,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Kotiraiteen Linkkinäyttö</h1>
       <Infoscreen />
     </div>
   )
