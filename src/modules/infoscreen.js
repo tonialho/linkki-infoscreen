@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import TimeFix from './timefix'
 import Rows from './rows'
 import {timetable} from './../db.json'
 
@@ -96,7 +95,10 @@ const Infoscreen = () => {
 
             if(foundBuses.length === 0) {
                 return (
-                    <p>Ei lähteviä linkkejä varttiin</p>
+                    <div>
+                        <h3 id="stops">{stops[stopIndex]} <br/> <button onClick={() => handleStops(stopIndex) } >Seuraava pysäkki</button></h3>
+                        <p>Ei lähteviä linkkejä varttiin</p>
+                    </div>
                 )
             }
             return (
